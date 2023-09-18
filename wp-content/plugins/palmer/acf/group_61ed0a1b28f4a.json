@@ -1,0 +1,52 @@
+{
+  "key": "group_61ed0a1b28f4a",
+  "title": "Sidebar Menu",
+  "fields": [
+    {
+      "key": "field_61ed0a2fedb5b",
+      "label": "Menu",
+      "name": "menu",
+      "type": "menu",
+      "instructions": "Select a menu",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "return_format": "id",
+      "allow_null": 0
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "page_type",
+        "operator": "==",
+        "value": "front_page"
+      },
+      {
+        "param": "page_type",
+        "operator": "!=",
+        "value": "front_page"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "left",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": true,
+  "description": "",
+  "show_in_rest": 0,
+  "acfe_display_title": "",
+  "acfe_autosync": [
+    "json"
+  ],
+  "acfe_form": 0,
+  "acfe_meta": "",
+  "acfe_note": ""
+}

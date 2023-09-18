@@ -1,0 +1,105 @@
+{
+    "key": "group_618a0c43a9dbd",
+    "title": "x. Post Content (Full-Width)",
+    "fields": [
+        {
+            "key": "field_618a0c5172092",
+            "label": "Components",
+            "name": "components",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "layout_618a0c597ef1b": {
+                    "key": "layout_618a0c597ef1b",
+                    "name": "flexible_cta_blocks",
+                    "label": "Flexible CTA Blocks",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_618a0c7572093",
+                            "label": "Flexible CTA Blocks",
+                            "name": "flexible_cta_blocks",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_61859f7f1db26"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_618a0c9172094": {
+                    "key": "layout_618a0c9172094",
+                    "name": "fullwidth_media_section",
+                    "label": "Full-Width Media Section",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_618a0ca172095",
+                            "label": "Full-Width Media Section",
+                            "name": "fullwidth_media_section",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_6189fd4acafe4"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "button_label": "Add Full-Width Component",
+            "min": "",
+            "max": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "",
+    "modified": 1638391408
+}

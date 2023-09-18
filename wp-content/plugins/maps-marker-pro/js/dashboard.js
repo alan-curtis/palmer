@@ -1,0 +1,1 @@
+jQuery(document).ready((function(o){o.ajax({type:"POST",url:ajaxurl,context:this,data:{action:"mmp_dashboard_rss",nonce:o("#mmp-dashboard-nonce").val()}}).done((function(n){o("#mmp_blog_posts").html(n.response)})).fail((function(){o("#mmp_blog_posts").html("<p>Failed to send request</p>")}))}));
