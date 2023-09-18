@@ -1,0 +1,143 @@
+.featured-media {
+  padding: 32.5px 0px;
+  overflow: hidden;
+  @include media-breakpoint-up(md) {
+    padding: 65px 0px;
+  }
+
+  .wrapiframe {
+    iframe {
+      display: none;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+    }
+  }
+
+  .iframepadding {
+    padding-bottom: 57%;
+  }
+
+  .playicon {
+    position: absolute;
+    bottom: 45%;
+    left: 45%;
+    &:hover{
+    cursor:pointer;
+    }
+  }
+  .vimeoIcon {
+    background: $white;
+    padding: 21px 23px 21px 23px;
+    border-radius: 93px;
+    font-size: 30px;
+    color: $color-darkpurple;
+    opacity: 0.8;
+    &:hover{
+    opacity:1;
+    cursor: pointer;
+    color: #fff;
+    background: $color-darkpurple;
+    }
+}
+
+  .img-block {
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .text-block {
+    padding: 60px 100px;
+    @media (max-width: 1200px) {
+      padding: 60px;
+    }
+    @media (max-width: 1024px) {
+      padding: 20px 40px;
+    }
+
+    p {
+      margin-bottom: 20px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  h3 {
+    font-size: 28px;
+    font-weight: 100;
+    margin-bottom: 10px;
+    line-height: 33px;
+  }
+
+  h2 {
+    margin-bottom: 19px;
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 22px;
+      font-size: 32px;
+      line-height: 37px;
+    }
+  }
+
+  .blurb {
+    font-size: 20px;
+    margin-bottom: 30px;
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 26px;
+    }
+    line-height: 27px;
+    a {
+      text-decoration: underline;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  a.cta {
+    overflow:hidden;
+    width: max-content;
+    font-size: 20px;
+    font-family: "knockout";
+    padding: 14px 30px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    &:hover {
+      color: $white;
+    }
+    @include media-breakpoint-down(md) {
+      text-align: center;
+      width: 100%;
+    }
+    transition: 0.2s transform ease-in-out;
+    will-change: transform;
+    z-index: 0;
+    
+    &:after{
+    background: linear-gradient(268.88deg, #471F6F 4.5%, #633681 94.03%);;
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-100%, 0) rotate(0deg);
+    transform-origin: top left;
+    transition: 0.5s transform ease-out;
+    will-change: transform;
+    z-index: -1;
+    }
+
+    &:hover{
+    box-shadow: 0px 0px 10px RGB(0 0 0 / 48%);
+    will-change: transform;
+  &:after{
+    transform: translate(0, 0);
+    }
+    }
+  }
+}

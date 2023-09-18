@@ -1,0 +1,150 @@
+.imageblocks-large {
+  padding: 32.5px 0px;
+  @include media-breakpoint-up(md) {
+    padding: 65px 0px;
+  }
+  .h1{
+  margin-bottom: 50px;
+  @include media-breakpoint-down(sm){
+  font-size: 32px;
+  line-height: 37px;
+  }
+  }
+  img {
+    width: 100%;
+    height: 198px;
+    object-fit: cover;
+  }
+  .card {
+    margin-top: -7px;
+    padding: 20px 20px;
+    .blurb {
+      
+        height: 200px;
+        overflow: hidden;
+        margin-bottom: 10px;
+      
+    }
+  }
+
+  .card {
+    @include media-breakpoint-up(lg) {
+      height: 379px;
+    }
+    @include media-breakpoint-up(md) {
+      height: 267px;
+    }
+    .morelink {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+
+  .imageblocks-large-slider {
+
+    overflow: hidden;
+    margin-bottom: 3px;
+
+    .slick-list {
+
+      .slick-track {
+        .slick-slide {
+          @include media-breakpoint-down(sm) {
+            position: relative;
+            &:before {
+              content: "";
+              position: absolute;
+              left: 0;
+              top: 0;
+              width: 100%;
+              height: 102%;
+              z-index: 9;
+            }
+          }
+
+
+          .card {
+            height: auto;
+            @include media-breakpoint-down(sm) {
+              position: relative;
+              display:flex !important;
+              .blurb{
+              max-height:200px;
+              height: auto;
+              }
+            }
+            @media (max-width: 575px) {
+              padding: 19px 19px 20px 20px;
+            }
+
+            img {
+              height: 407px;
+              object-fit: cover;
+            }
+
+            p {
+              @media (max-width: 575px) {
+                max-height: 180px;
+                overflow: hidden;
+              }
+            }
+          }
+
+          h3 {
+            @include media-breakpoint-down(sm) {
+              font-size: 24px;
+              line-height: 28px;
+            }
+          }
+
+        }
+
+        .slick-slide.slick-current {
+          @include media-breakpoint-down(sm) {
+            &:before {
+              content: none;
+              display: none;
+            }
+          }
+        }
+      }
+    }
+
+    .slick-dots {
+        position: initial;
+
+      li {
+        margin: 0 4px;
+
+        button {
+          &:before {
+            color: #333333;
+            font-size: 13px;
+            opacity: 1;
+          }
+        }
+
+        &.slick-active {
+          button {
+            &:before {
+              color: transparent;
+              border: 2px solid #333;
+              opacity: 1;
+              font-size: 13px;
+              width: 11px;
+              height: 11px;
+              border-radius: 30px;
+              top: 3px;
+              left: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+}
+

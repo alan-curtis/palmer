@@ -1,0 +1,90 @@
+.pagination-directory {
+  margin-bottom: 100px;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  margin-top: 50px !important;
+  flex-wrap: wrap;
+
+  .first-page {
+    a {
+      font-size: 16px;
+      line-height: 18px;
+      text-decoration-line: underline;
+      color: #4d3069;
+      cursor: pointer;
+    }
+  }
+  .last-page {
+    a {
+      font-size: 16px;
+      line-height: 18px;
+      text-decoration-line: underline;
+      color: #4d3069;
+      cursor: pointer;
+    }
+  }
+  .prev-page {
+    a {
+      font-size: 16px;
+      line-height: 18px;
+      text-decoration-line: underline;
+      color: #4d3069;
+      cursor: pointer;
+      pointer-events: all;
+      @include media-breakpoint-up(md) {
+        margin-left: 32px;
+      }
+    }
+  }
+  .next-page {
+    a {
+      font-size: 16px;
+      line-height: 18px;
+      text-decoration-line: underline;
+      color: #4d3069;
+      cursor: pointer;
+      pointer-events: all;
+       @include media-breakpoint-up(md) {
+        margin-right: 32px;
+      }
+    }
+  }
+
+  ul.page-numbers {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+    order: -1;
+    flex: 0 0 100%;
+    margin-bottom: 19px;
+    @include media-breakpoint-up(md) {
+      order: unset;
+      margin-bottom: unset;
+      flex: 1;
+      order: unset;
+    }
+    li {
+      text-decoration: underline;
+      padding: 12px 16px;
+      border-radius: 6px;
+      color: #626262;
+      &:hover {
+        background: #f2f2f2;
+        border-radius: 6px;
+      }
+      &.active {
+        padding: 12px 16px;
+        background: #4d3069;
+        border-radius: 6px;
+        color: white;
+        font-family: Helvetica;
+        font-size: 16px;
+        line-height: 18px;
+        text-decoration-line: underline;
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+.wpgmza_marker_list_class,
+.wpgmza-pagination {
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+}

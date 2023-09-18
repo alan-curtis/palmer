@@ -1,0 +1,65 @@
+.sidebar-contacts {
+  margin-top: 45px;
+
+  h5 {
+    font-family: $font-open;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    color: $color-purple;
+    margin:0 0 15px;
+  }
+}
+
+.sidebar-contact-block {
+  max-width: 230px;
+  padding-bottom: 15px;
+
+  &:last-of-type {
+    padding-bottom: 0;
+  }
+
+  ul {
+    padding: 0;
+    border-bottom: 2px solid #C4C4C4;
+
+    li {
+      align-items: baseline;
+      list-style-type: none;
+      margin-bottom: 15px;
+      display: flex;
+      flex-wrap: wrap;
+      i {
+        font-size: 16px;
+        width: 10px;
+        line-height:normal;
+        text-align: center;
+        margin-right: 20px;
+        color: $color-purple;
+      }
+
+      a {
+        font-size: 16px;
+        color: #282B2C;
+        line-height: 22px;
+        font-weight: normal;
+        position: relative;
+        text-decoration: none;
+        &:hover{
+        color: $color-purple;
+        text-decoration : underline;
+        }
+        span {
+          display: block;
+        }
+
+      }
+      &.address{
+      flex-wrap: unset;
+      }
+      &.contact-name {
+        flex-wrap: unset;
+      }
+    }
+  }
+}

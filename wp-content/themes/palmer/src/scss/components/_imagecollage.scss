@@ -1,0 +1,142 @@
+.collage-image-section {
+  position: relative;
+  background: #f6f6f6;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 19%;
+
+  img.crest {
+    max-height: 784px;
+    position: absolute;
+    right: -52px;
+    @include media-breakpoint-down(md) {
+      width: 144px;
+    }
+    @include media-breakpoint-down(sm) {
+      width: 222px;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    margin-bottom: 73px;
+    background-size: contain;
+  }
+
+  .collage-image {
+    overflow: hidden;
+  }
+
+  .collage-image:nth-child(2) img:first-child {
+    height: 320px;
+    object-fit: cover;
+    overflow: hidden;
+  }
+  .collage-image:nth-child(2) img:last-child {
+    height: 426px;
+    object-fit: cover;
+    overflow: hidden;
+  }
+  .collage-image:nth-child(1) img:first-child {
+    height: 426px;
+    object-fit: cover;
+    overflow: hidden;
+  }
+
+  .collage-image:nth-child(1) img:last-child {
+    height: 320px;
+    object-fit: cover;
+    overflow: hidden;
+  }
+  @include media-breakpoint-down(md) {
+    .collage-image:nth-child(2) img:first-child {
+      height: 182px;
+      object-fit: cover;
+      overflow: hidden;
+    }
+    .collage-image:nth-child(2) img:last-child {
+      height: 136px;
+      object-fit: cover;
+      overflow: hidden;
+    }
+    .collage-image:nth-child(1) img:first-child {
+      height: 136px;
+      object-fit: cover;
+      overflow: hidden;
+    }
+
+    .collage-image:nth-child(1) img:last-child {
+      height: 182px;
+      object-fit: cover;
+      overflow: hidden;
+    }
+  }
+
+  .collage-image > img {
+    width: 100%;
+    border: 3px solid #f6f6f6;
+  }
+
+  .collage-image-box {
+    background: $white;
+    height: auto;
+    border-bottom: 8px solid $color-blue;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    @include media-breakpoint-up(md) {
+      max-width: 380px;
+    }
+    h2 {
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 42px;
+      @include media-breakpoint-down(md) {
+        margin-bottom: 20px;
+      }
+    }
+
+    a {
+      padding-bottom: 8px;
+      display: flex;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    .collage-image-box {
+      padding: 20px;
+      margin-top: -39px;
+      width: 93%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  @include media-breakpoint-up(md) {
+    .collage-image-box {
+      position: absolute;
+      padding: 30px;
+      top: 124px;
+      left: -31%;
+    }
+  }
+  @media (max-width: 990px) and (min-width: 768px) {
+    .collage-image-box {
+      position: absolute;
+      padding: 20px;
+      top: 34px;
+      left: -25%;
+
+      p {
+        margin-bottom: 8px;
+      }
+
+      a {
+        padding-bottom: 0;
+      }
+
+      h2 {
+        font-size: 24px;
+        line-height: 30px;
+      }
+    }
+  }
+}

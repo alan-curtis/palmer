@@ -1,0 +1,10 @@
+.hero-video {
+  video#player {
+    height: 530px;
+    width: 100%;
+    object-fit: cover;
+    @include media-breakpoint-up(md) {
+      height: 700px;
+    }
+  }
+}

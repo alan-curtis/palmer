@@ -1,0 +1,477 @@
+//top header
+.main-container {
+  margin-top: 63px;
+  @include media-breakpoint-up(md) {
+    margin-top: 100px;
+  }
+}
+
+.floating-menu {
+  display: none;
+  position: absolute;
+  right: 30px;
+  padding: 10px 5px;
+  margin-top: 8px;
+
+  .stick-quicklinksbar & {
+    @media screen and (min-width: 1240px) {
+      display: flex;
+    }
+  }
+
+  a {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: Knockout;
+    font-size: 20px;
+    line-height: 23px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    position: relative;
+    width: max-content;
+
+    &.dropdown-item {
+      background: none;
+
+      &:hover {
+        color: $color-darkpurple;
+      }
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      background: #34194d;
+      transform: skew(-30deg);
+    }
+
+    &:hover {
+      &::before {
+        background: $color-lightgold;
+      }
+    }
+  }
+}
+
+// Mobile: Header
+header.mobilenav {
+  top: 0;
+  padding: 12.5px 20px;
+  max-width: 100%;
+
+  > .mobilenav {
+    max-width: 100%;
+  }
+
+  .logged-in & {
+    top: 46px;
+    margin-top: 0;
+    @include media-breakpoint-up(md) {
+      top: 34px;
+    }
+  }
+
+  .mobile-logo {
+    display: flex;
+    flex-flow: row;
+    align-items: end;
+
+    .brandingnav {
+      .logo {
+        height: 38px;
+        @include media-breakpoint-up(md) {
+          height: 75px;
+        }
+      }
+    }
+  }
+
+  .mobile-hamburger {
+    display: flex;
+    flex-flow: row wrap;
+
+    .hamburger-menu {
+      margin-left: 22px;
+    }
+  }
+}
+
+
+// Alert Messages Block
+.alert_msg {
+  margin-bottom: 0;
+  padding: 5px 0 5px 0;
+  background: #231F20;
+  color: #fff;
+  border-radius: 0;
+
+  .text {
+    font-size: 18px;
+    line-height: 25px;
+    text-shadow: 0px 0px 10px RGB(0 0 0 / 15%);
+
+    &:hover {
+      color: $color-lightgold;
+    }
+  }
+
+  strong {
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  .text_wrap {
+    gap: 15px;
+  }
+
+  img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .close {
+    position: absolute;
+    top: 4px !important;
+    font-size: 18px;
+    opacity: 1 !important;
+    line-height: 21px;
+    color: #fff;
+    padding: 0;
+    right:20px;
+
+    &:hover {
+      color: $color-lightgold;
+    }
+  }
+}
+
+.alert_msg.cookieSet {
+  display: none;
+}
+
+.top-nav-bar {
+  ul.top-header__menu__list {
+    li.menu-item {
+      a {
+        font-size: 14px;
+        line-height: 19.07px;
+        color: #828282;
+        font-weight: 700;
+        margin: 0 10px;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  top: 0;
+
+  .logged-in & {
+    margin-top: 32px;
+  }
+
+  .header-inner-wrapper {
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    .stick-quicklinksbar & {
+      padding-bottom: 20px;
+    }
+  }
+
+  .brandingwrap {
+    padding: 0 0 0 20px;
+
+    .logo {
+      height: 75px;
+      width: auto;
+    }
+  }
+
+  .header-years {
+    margin-top: -22px;
+
+    img {
+      max-width: 54px;
+      height: auto;
+      margin: 0 auto;
+    }
+  }
+
+  .topmenuwrap {
+    margin-bottom: 10px;
+  }
+
+  .tagline {
+    max-width: 160px;
+    @include media-breakpoint-down(md) {
+      max-width: 82px;
+    }
+  }
+
+  .navbar {
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  #mnmwp-main-menu {
+    background: none;
+    margin-right: 0;
+
+    ul.sub-menu {
+      background: #fff;
+    }
+  }
+
+  #mnmwp-main-menu > ul > li:hover > a {
+    color: #828282;
+  }
+
+  #mnmwp-main-menu ul.sub-menu {
+    background: #fff;
+    border-top: 7px solid $color-purple;
+    box-shadow: 1px 1px 1px 1px #80808066;
+    z-index: 99999;
+  }
+
+  #mnmwp-main-menu li:hover > ul > li a:hover {
+    background: $color-purple;
+    color: #fff;
+  }
+
+  #mnmwp-main-menu li:hover > ul > li a {
+    background: #fff;
+    color: $color-purple;
+  }
+
+  #mnmwp-main-menu li:hover > ul > li a {
+    border: none;
+  }
+
+
+  #mnmwp-main-menu ul ul > li:hover > a {
+    background: #fff;
+    color: #828282;
+  }
+
+  #mnmwp-main-menu ul ul li a {
+    background: #fff;
+    color: #828282;
+  }
+
+  #mnmwp-main-menu ul ul ul li a {
+    background: #fff;
+    color: #828282;
+  }
+
+  #mnmwp-main-menu ul ul ul li a {
+    background: #fff;
+    color: #828282;
+  }
+
+  #mnmwp-main-menu ul ul ul li:hover > a {
+    background: #fff;
+    color: #828282;
+  }
+
+  #mnmwp-main-menu ul li a:hover {
+    color: $color-purple;
+  }
+
+  #mnmwp-main-menu > ul > li > a:hover {
+    color: $color-purple !important;
+  }
+
+  #mnmwp-main-menu > ul > li > a::before {
+    display: none !important;
+  }
+
+  #mnmwp-main-menu > ul > li > a::after {
+    display: none !important;
+  }
+
+  #mnmwp-main-menu ul ul li.has-sub > a:after, #mnmwp-main-menu ul ul li.has-sub > a:before {
+    background: $color-purple;
+  }
+
+  #mnmwp-main-menu ul > li.has-sub > a:after, #mnmwp-main-menu ul > li.has-sub > a:before {
+    height: 0;
+    width: 0;
+  }
+
+//Top menu second level menu items hide arrows
+  #mnmwp-main-menu ul ul li.has-sub > a:before {
+    background: $color-purple;
+    content: "\f105";
+    font-family: 'Font Awesome 5 Free';
+    position: absolute;
+    top: 7px !important;
+    transform: none;
+    display:none;
+  }
+
+//Top menu second level menu items hide arrows
+  #mnmwp-main-menu > ul > li.has-sub > ul.sub-menu li.has-sub:hover > a:before {
+    content: "\f105";
+    font-family: 'Font Awesome 5 Free';
+    position: absolute;
+    top: 7px !important;
+    transform: none;
+    display:none;
+  }
+
+  #mnmwp-main-menu li:hover > ul > li {
+    height: auto;
+  }
+
+  #mnmwp-main-menu li:hover > ul > li a {
+    border: none;
+    padding: 7px 0 !important;
+  }
+
+// Hide second level items in top menu
+  #mnmwp-main-menu ul ul {
+    border-top: 7px solid #008CAA !important;
+    display : none !important;
+  }
+
+  #mnmwp-main-menu ul ul ul ul {
+    border-top: 7px solid $color-secondarygold !important;
+  }
+
+  #mnmwp-main-menu ul li a {
+    font-size: 14px;
+    line-height: 19.07px;
+    color: #828282;
+    font-weight: 700;
+    margin: 0;
+    padding: 4px;
+    letter-spacing: inherit;
+    text-align: center;
+  }
+
+  #mnmwp-main-menu ul li a:hover {
+    color: #828282;
+  }
+
+  #mnmwp-main-menu > ul > li:hover {
+    background: #fff;
+  }
+
+  #mnmwp-main-menu > ul > li {
+    background: none;
+    &:hover {
+      background: none;
+    }
+  }
+
+  #mnmwp-main-menu > ul > li.has-sub > a {
+    padding-right: 0;
+  }
+
+  #mnmwp-main-menu a {
+    text-transform: capitalize !important;
+    padding: 0px 20px 0 0 !important;
+  }
+
+  background: #fff;
+
+  a.branding:after {
+    content: "";
+    position: absolute;
+    right: -16px;
+    top: 0;
+    bottom: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-right: 1px solid $color-border-light;
+  }
+
+  a.branding {
+    display: block;
+    position: relative;
+    margin-right: 20px;
+  }
+
+  .quicklinks-nav-bar {
+    font-family: 'knockout';
+    border-left: 2px solid #c4c4c4;
+    padding-left: 20px;
+
+    button {
+      color: $color-purple;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.main-menu-nav-bar {
+  .nav-item:last-child {
+    a {
+      margin-right: 24px !important;
+    }
+  }
+
+  a.nav-link.h4:hover {
+    color: $color-purple;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-thickness: 6px;
+    text-underline-offset: 18px;
+  }
+
+  a.nav-link.h4:active {
+    color: $color-purple;
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-thickness: 6px;
+    text-underline-offset: 18px;
+  }
+
+  a.nav-link.h4 {
+    font-size: 20px;
+    color: $color-grey1;
+    line-height: 23.44px;
+    font-family: $font-knockout;
+    text-transform: uppercase;
+    font-weight: normal;
+    padding: 0px 0px;
+    margin: 0px 12px 0px 12px;
+  }
+}
+
+@media screen and (min-width:1240px) and (max-width: 1440px){
+  header .container {
+    max-width: 100%;
+  }
+  header #mega-menu-wrap-main-nav #mega-menu-main-nav > li.mega-menu-item > a.mega-menu-link {
+    margin: 0 7px;
+  }
+}
+
+@media screen and (min-width: 1282px) {
+  header #mega-menu-wrap-main-nav #mega-menu-main-nav > li.mega-menu-item > a.mega-menu-link {
+    margin: 0 12px;
+  }
+}

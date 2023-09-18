@@ -1,0 +1,193 @@
+.campus-locations {
+  //background-image: url(/wp-content/uploads/2021/11/Mask-Group.png);
+  //background-repeat: no-repeat;
+  //background-position: 164px 0px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  @include media-breakpoint-down(md) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  h1{
+    margin-bottom: 30px;
+  }
+
+  @include media-breakpoint-up(sm) {
+    .card {
+      .morelink {
+        position: absolute;
+        bottom: 27px;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    .card {
+      .morelink {
+        position: absolute;
+        bottom: 27px;
+      }
+    }
+  }
+
+  .card {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    padding-bottom: 40px;
+    height: 100%;
+    h3 {
+      margin-bottom: 8px;
+    }
+    .icon{
+    width:86px;
+    }
+    .address{
+    margin-bottom:8px;
+    }
+
+    .contactwrap{
+     a{
+     &:hover{
+        u{
+          text-decoration: none;
+        }
+     }
+}
+}
+
+    .links{
+        gap: 10px;
+    margin-top: 40px;
+    margin-bottom: 24px;
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+    a{
+    overflow:hidden;
+    font-size:20px;
+    font-family:knockout;
+    text-transform:uppercase;
+    line-height:23px;
+    background:#34194D;
+    color:#fff;
+    padding-top: 17px;
+    padding-bottom: 17px;
+
+    transition: 0.2s transform ease-in-out;
+    will-change: transform;
+    z-index: 0;
+    
+    &:after{
+    background: linear-gradient(268.88deg, #471F6F 4.5%, #633681 94.03%);;
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-100%, 0) rotate(0deg);
+    transform-origin: top left;
+    transition: 0.5s transform ease-out;
+    will-change: transform;
+    z-index: -1;
+    }
+
+    &:hover{
+    box-shadow: 0px 0px 10px RGB(0 0 0 / 48%);
+    will-change: transform;
+  &:after{
+    transform: translate(0, 0);
+    }
+    }
+
+    }
+    }
+    .iconbox {
+    min-height: 144px;
+    }
+  }
+
+  .b-purple {
+    border-bottom: 8px solid #8C2B73;
+  }
+
+  .text-purple {
+    color: #8C2B73;
+  }
+
+  .b-teal {
+    border-bottom: 8px solid $color-teal;
+  }
+
+  .text-teal {
+    color: $color-teal;
+  }
+
+  .b-secondarygold {
+    border-bottom: 8px solid $color-secondarygold;
+  }
+
+  .text-secondarygold {
+    color: $color-secondarygold;
+  }
+
+  .b-blue {
+    border-bottom: 8px solid #008CAA;
+  }
+
+  .text-blue {
+    color: #008CAA;
+  }
+
+  .social-links {
+    margin-top: 30px;
+
+    a {
+      font-size: 0;
+      margin-right: 10px;
+
+      &:hover {
+        color: $color-lightpurple;
+      }
+
+      &:before {
+        font-family: $font-awes;
+        font-size: 20px;
+      }
+
+      &[href*="facebook.com"] {
+        &:before {
+          content: "\f09a";
+        }
+      }
+
+      &[href*="twitter.com"] {
+        &:before {
+          content: "\f099";
+        }
+      }
+
+      &[href*="instagram.com"] {
+        &:before {
+          content: "\f16d";
+          font-family: 'Font Awesome 5 Brands';
+        }
+      }
+
+      &[href*="youtube.com"] {
+        &:before {
+          content: "\f16a";
+        }
+      }
+
+      &[href*="linkedin.com"] {
+        &:before {
+          content: "\f0e1";
+        }
+      }
+    }
+  }
+
+}

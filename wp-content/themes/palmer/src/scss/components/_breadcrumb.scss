@@ -1,0 +1,30 @@
+.main-breadcrumb-title {
+  margin-bottom: 30px;
+  .hide-breadcrumb-title & {
+    display: none;
+  }
+  .title {
+    h1 {
+      font-size: 48px;
+      font-family: $font-knockout;
+      line-height: 54px;
+      margin-bottom: 8px;
+    }
+  }
+
+  .breadcrumbs {
+    padding: 0;
+    margin:0;
+    list-style: none;
+    display: flex;
+    li, a, strong{
+      color: #471F6F;
+      font-size: 14px;
+      line-height: 19px;
+      font-family: $font-open;
+      text-transform: capitalize;
+      font-weight: normal;
+    }
+  }
+
+}

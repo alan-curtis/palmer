@@ -1,0 +1,12 @@
+{
+    "/js/manifest.js": "/js/manifest.js",
+    "/js/manifest.js.map": "/js/manifest.js.map",
+    "/js/theme-main.js": "/js/theme-main.js",
+    "/css/theme-vendors.css": "/css/theme-vendors.css",
+    "/css/theme-main.css": "/css/theme-main.css",
+    "/js/theme-main.js.map": "/js/theme-main.js.map",
+    "/css/theme-vendors.css.map": "/css/theme-vendors.css.map",
+    "/css/theme-main.css.map": "/css/theme-main.css.map",
+    "/js/vendor.js": "/js/vendor.js",
+    "/js/vendor.js.map": "/js/vendor.js.map"
+}

@@ -1,0 +1,302 @@
+.persons-list {
+  padding: 32.5px 0px;
+  @include media-breakpoint-up(md) {
+    padding: 65px 0px;
+  }
+  h2 {
+    @include media-breakpoint-up(sm) {
+    }
+    @include media-breakpoint-down(sm) {
+      font-size: 32px;
+      line-height: 36px;
+      margin-bottom: 13px;
+    }
+  }
+  .blocks {
+    &.align-items-center {
+      margin-bottom: 26px;
+      @include media-breakpoint-down(md) {
+        display: none;
+      }
+    }
+    .person {
+      &:last-child .card {
+        margin-bottom: 0;
+      }
+      .card {
+        padding: 0px 39px 40px 0px;
+        margin-bottom: 30px;
+        border-top: 5px solid $color-lightgold;
+        gap: 20px;
+        .content {
+          padding-top: 22px;
+          width: 85%;
+          .person-name {
+            font-family: Knockout;
+            font-size: 20px;
+            line-height: 23px;
+            color: #4d3069;
+            display: flex;
+            margin-bottom: 40px;
+            @include media-breakpoint-down(sm) {
+              font-size: 18px;
+              line-height: 21px;
+              margin-bottom: 8px;
+            }
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+
+          .person-name[href="javascript:void(0)"]{
+            &:hover{
+             text-decoration:none;
+            }
+          }
+
+          .contact-details {
+            margin-bottom: 20px;
+            @include media-breakpoint-down(sm) {
+              display: flex;
+              flex-direction: column;
+              gap: 16px;
+            }
+
+            li {
+              a {
+                text-decoration: underline;
+                &:hover {
+                  text-decoration: none;
+                }
+              }
+              i {
+                margin-right: 12px;
+              }
+            }
+          }
+          .bio {
+            ol,
+            ul {
+              display: block;
+              padding-inline-start: 20px;
+
+              li {
+                display: list-item;
+                text-align: -webkit-match-parent;
+                font-size: 16px;
+                line-height: 30px;
+                color: #333333;
+                @include media-breakpoint-up(md) {
+                  font-size: 18px;
+                }
+
+                a {
+                  text-decoration: underline;
+
+                  &:hover {
+                    color: #8c2b73;
+                  }
+                }
+
+                ol, ul {
+                  margin: 0;
+                }
+              }
+            }
+
+            ol {
+              list-style-type: decimal;
+            }
+
+            ul {
+              list-style-type: disc;
+            }
+          }
+        }
+
+        img {
+          width: 100%;
+          @include media-breakpoint-up(sm) {
+            height: 200px;
+            object-fit: cover;
+            width: 160px;
+            object-position: right;
+          }
+        }
+      }
+    }
+  }
+
+  .directory {
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 25px;
+    }
+  }
+  .directory-link {
+    font-family: Knockout;
+    @include media-breakpoint-up(sm) {
+      float: right;
+      font-size: 20px;
+      line-height: 23px;
+    }
+    @include media-breakpoint-down(sm) {
+      font-size: 18px;
+      line-height: 21px;
+    }
+    text-transform: uppercase;
+    color: #633681;
+    &:after {
+      content: "\f105";
+      font-family: "FontAwesome";
+      font-size: 17px;
+      line-height: 20px;
+      font-weight: 900;
+      margin-left: 8px;
+    }
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  h1 {
+    margin-bottom: 50px;
+  }
+
+  .card {
+    box-shadow: 0px 2px 8px RGB(0 0 0 / 15%);
+
+    h3 {
+      margin-bottom: 10px;
+    }
+  }
+
+  .persons-list-slider {
+    overflow: hidden;
+    margin-bottom: 3px;
+    
+    @include media-breakpoint-down(sm) {
+      /*overflow: visible;*/
+      padding: 0 20px;
+    }
+
+    .slick-list {
+      @include media-breakpoint-down(sm) {
+        margin-bottom: 20px;
+      }
+
+      .slick-track {
+        .slick-slide {
+          @include media-breakpoint-down(sm) {
+            position: relative;
+            &:before {
+              content: "";
+              position: absolute;
+              left: 0;
+              top: 0;
+              width: 100%;
+              height: 102%;
+              z-index: 9;
+            }
+          }
+
+          .card {
+            @include media-breakpoint-down(sm) {
+              position: relative;
+              border-top: 5px solid $color-lightgold;
+              .content-wrap {
+                padding: 18px 20px 20px 20px;
+                .contact-details {
+                  margin-bottom: 18px;
+                  flex-direction: column;
+                  display: flex;
+                  gap: 16px;
+                  li {
+                    a {
+                      text-decoration: underline;
+                      margin-left: 12px;
+                    }
+                  }
+                }
+              }
+
+              img {
+                @include media-breakpoint-down(sm) {
+                  width: 127px;
+                  height: 144px;
+                  object-fit: cover;
+                  object-position: right;
+                }
+              }
+
+              .person-name {
+                font-family: Knockout;
+                font-size: 18px;
+                line-height: 21px;
+                color: #4d3069;
+                padding-top: 20px;
+                margin-left: 19px;
+                padding-right: 20px;
+                &:hover {
+                  text-decoration: underline;
+                }
+              }
+            }
+            @media (max-width: 575px) {
+              padding: 0px 0px 0px 0px;
+            }
+
+            
+          }
+          h3 {
+            @include media-breakpoint-down(sm) {
+              font-size: 24px;
+              line-height: 28px;
+            }
+          }
+        }
+
+        .slick-slide.slick-current {
+          @include media-breakpoint-down(sm) {
+            &:before {
+              content: none;
+              display: none;
+            }
+          }
+        }
+      }
+    }
+
+    .slick-dots {
+      bottom: 0px;
+      position: relative;
+
+      li {
+        margin: 0 4px;
+
+        button {
+          &:before {
+            color: #333333;
+            font-size: 13px;
+            opacity: 1;
+          }
+        }
+
+        &.slick-active {
+          button {
+            &:before {
+              color: transparent;
+              border: 2px solid #333;
+              opacity: 1;
+              font-size: 13px;
+              width: 11px;
+              height: 11px;
+              border-radius: 30px;
+              top: 3px;
+              left: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "barstow",
+  "version": "1.0.1",
+  "author": "kwall",
+  "private": true,
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "autoprefixer": "^9.8.6",
+    "gulp": "^3.9.1",
+    "gulp-bootstrap-configurator": "^0.4.1",
+    "gulp-postcss": "^7.0.1",
+    "gulp-sass": "^4.1.0"
+  },
+  "description": "<!-- @file Instructions for subtheming using the CDN Starterkit. --> <!-- @defgroup sub_theming_cdn --> <!-- @ingroup sub_theming --> # CDN Starterkit",
+  "main": "gulpfile.js",
+  "scripts": {
+    "gulp": "gulp"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "font-awesome": "^4.7.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "slick-carousel": "^1.8.1"
+  }
+}

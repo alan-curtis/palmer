@@ -1,0 +1,94 @@
+// Global Variables specific to site & override to bootstrap variables.
+@import "global/variables";
+
+// Import bootstrap-reboot to use bootstrap mixins directly. it will not add the css, just provides mixins to use.
+//@import "../../node_modules/bootstrap/scss/functions";
+//@import "../../node_modules/bootstrap/scss/variables";
+//@import "../../node_modules/bootstrap/scss/mixins";
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+//slick carousel
+@import "../../node_modules/slick-carousel/slick/slick.scss";
+@import "../../node_modules/slick-carousel/slick/slick-theme.scss";
+
+//font-awesome
+@import "../../node_modules/font-awesome/scss/font-awesome";
+
+// Global custom libraries.
+@import "global/unit";
+@import "global/spacing-mixins";
+
+// Global Custom mixins specific to site.
+@import "global/mixin-typography";
+
+// Remove browser default css.
+@import "global/base-reset";
+
+// Site typography.
+@import "base/base-typography";
+
+// Components based scss files.
+@import "components/header";
+@import "components/footer";
+@import "components/breadcrumb";
+@import "components/heroslider";
+@import "components/flexiblectablocks";
+@import "components/statssection";
+@import "components/fullwidthmediasection";
+@import "components/fullwidthslideshow";
+@import "components/quicklinksbar";
+@import "components/imagecollage";
+@import "components/campuslocations";
+@import "components/imageblockslarge";
+@import "components/featuredmedia";
+@import "components/accordian";
+@import "components/blockquote";
+@import "components/imagesblockssmall";
+@import "components/tabs";
+@import "components/wysiwyg";
+@import "components/testimonialcarousel";
+@import "components/sidebarctabuttons";
+@import "components/sidebarlinks";
+@import "components/sidebarmenu";
+@import "components/sidebarcontact";
+@import "components/tokengrid";
+@import "components/imagegallery";
+@import "components/herobanner";
+@import "components/imagegrid";
+@import "components/timelinecarousel";
+@import "components/events";
+@import "components/personsgrid";
+@import "components/personslist";
+@import "components/newsgrid";
+@import "components/body";
+@import "components/countdown";
+@import "components/eventsgrid";
+@import "components/newscenter";
+@import "components/basicpage";
+@import "components/homepagecontenttype";
+@import "components/heroslider-125";
+@import "components/news_events_combo";
+@import "components/template-directory";
+@import "components/pagination";
+@import "components/herovideo";
+@import "components/featurednewscarousel";
+@import "components/libraryfilter";
+@import "components/sidebarmenu";
+@import "components/megamenu";
+@import "components/singleevent";
+@import "components/sidebarhours";
+@import "components/gforms";
+@import "components/imagesblockssimple.scss";
+@import "components/landingpagecontenttype";
+@import "components/blog-post";
+@import "components/maps";
+@import "components/find-chiropractor";
+@import "components/videogridder";
+@import "components/institutionsfilter";
+@import "components/featuredevents";
+@import "components/mobile-menu";
+@import "components/404-page";
+@import "components/map";
+@import "components/cookiebar";
+

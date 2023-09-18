@@ -1,0 +1,115 @@
+.sidebar-cta-buttons {
+  padding-bottom:40px;
+  max-width: 230px;
+  @include media-breakpoint-down(sm) {
+    max-width: unset;
+    padding-bottom:28px;
+  }
+
+  ul {
+    padding: 0;
+    li {
+      list-style-type: none;
+      width: 100%;
+      display: flex;
+      text-align: center;
+      margin-bottom: 10px;
+
+      a {
+        overflow:hidden;
+        text-transform: uppercase;
+        color: $white;
+        padding: 20px 20px;
+        width: 100%;
+        font-size: 19px;
+        line-height: 22px;
+        text-decoration: none;
+        font-family: $font-knockout;
+        position: relative;
+        @include media-breakpoint-down(sm){
+          font-size: 16px;
+          line-height: 22px;
+
+        }
+
+        &:after {
+          content: "\f061";
+          font-family: 'Font Awesome 5 Free';
+          top: 50%;
+          position: absolute;
+          right: 15px;
+          transform: translate(0, -50%);
+        }
+        i{
+        padding-left:8px;
+        }
+    transition: 0.2s transform ease-in-out;
+    will-change: transform;
+    z-index: 0;
+    
+    &:after{
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-100%, 0) rotate(0deg);
+    transform-origin: top left;
+    transition: 0.5s transform ease-out;
+    will-change: transform;
+    z-index: -1;
+    }
+      &:hover{
+    box-shadow: 0px 0px 10px RGB(0 0 0 / 48%);
+    will-change: transform;
+  &:after{
+    transform: translate(0, 0);
+    }
+    }
+      }
+
+      &:first-child {
+        a {
+          background: #34194D;
+           &:after{
+           background: linear-gradient(268.88deg, #471F6F 4.5%, #633681 94.03%);
+          }
+        }
+      }
+
+      &:nth-child(2) {
+        a {
+          background: $color-teal;
+          &:after{
+           background: linear-gradient(268.88deg, #087269 4.5%, rgba(0, 153, 140, 0) 94.03%);
+          }
+        }
+      }
+
+      &:nth-child(3) {
+        a {
+          background: $color-lightgold;
+          color: $color-purple;
+ 
+          &:after {
+            color: $color-purple;
+          }
+           &:after{
+          background: linear-gradient(268.88deg, #AD872D 4.5%, rgba(173, 135, 45, 0) 94.03%);
+          }
+        }
+      }
+
+      &:nth-child(4) {
+        a {
+          background: $color-blue;
+           &:after{
+           background: linear-gradient(268.88deg, #096175 4.5%, rgba(0, 153, 140, 0) 94.03%);
+          }
+        }
+      }
+    }
+  }
+}

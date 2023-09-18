@@ -1,0 +1,124 @@
+.statssection {
+  background: $color-purple;
+  padding-top: 138px;
+  padding-bottom: 95px;
+  margin-top: -35px;
+  @include media-breakpoint-down(sm) {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 25px;
+    @include media-breakpoint-down(sm) {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+
+  h1 {
+    margin-bottom: 10px;
+    @include media-breakpoint-down(sm) {
+      font-size: 32px;
+      line-height: 37px;
+      margin-bottom: 12px;
+    }
+  }
+
+  h2 {
+    @include media-breakpoint-down(sm) {
+      font-size: 32px;
+      line-height: 37px;
+    }
+  }
+
+  p:nth-child(1) {
+    margin-bottom: 24px;
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 32px;
+    }
+  }
+
+  .icon-wrap {
+    @include media-breakpoint-up(sm) {
+      margin-bottom: 19px;
+    }
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 3px;
+      height: auto;
+    }
+    img {
+      @include media-breakpoint-down(sm) {
+        max-height: 62px;
+        width: auto;
+        padding: 0;
+      }
+    }
+    .imgBox {
+      height: 62px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 11px;
+      @include media-breakpoint-down(sm) {
+        max-height: 62px;
+        height: auto;
+      }
+    }
+    .color-lightgold {
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .buttons_wrap {
+    margin-bottom: 86px;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 56px;
+    }
+    a {
+      i {
+        margin-left: 8px;
+        font-size: 14px;
+        line-height: 16px;
+      }
+      &:hover {
+        color: $white;
+        text-decoration: underline;
+      }
+    }
+  }
+  .stat {
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 48px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &:after {
+    content: "";
+    height: 100px;
+    width: 4px;
+    background: #d5a228;
+    position: absolute;
+    left: 50%;
+    margin-top: 44px;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+    @include media-breakpoint-down(sm) {
+      height: 50px;
+      margin-top: 42px;
+    }
+  }
+  &.active {
+    &:after {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}

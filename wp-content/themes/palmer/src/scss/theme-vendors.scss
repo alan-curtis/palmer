@@ -1,0 +1,18 @@
+// Import FontAwesome (old 4.7 version)
+$fa-font-path: "../../node_modules/@fortawesome/fontawesome-free/webfonts/";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/regular";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/solid";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/v4-shims";
+
+
+// Import Bootstrap CSS
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// Import Slick slider CSS
+$slick-font-path: "../../node_modules/slick-carousel/slick/fonts/";
+$slick-loader-path: "../../node_modules/slick-carousel/slick/";
+
+
+// Import custom project webfonts
+@import "global/base-fonts";

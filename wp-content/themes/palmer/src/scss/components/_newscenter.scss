@@ -1,0 +1,266 @@
+.news-center-template{
+background: $white;
+padding-top: 37px;
+.headline{
+    padding-top: 30px;
+    padding-bottom: 30px;
+     @include media-breakpoint-up(md){
+    padding-top: 37px;
+    padding-bottom: 22px;
+    }
+ p{
+ margin:0;
+ }
+.h1{
+     @include media-breakpoint-down(md){
+    font-size: 32px;
+    line-height: 37px;
+    }
+    }
+.breadcrumb {
+    background: $white;
+    justify-content: center;
+    padding: 0;
+    font-family: $font-open;
+    font-size: 14px;
+    line-height: 19px;
+    color:$color-mainpurple;
+}
+}
+
+  ul#breadcrumbs {
+    display: flex;
+    justify-content: center;
+    gap:5px;
+    li{
+    font-size: 14px;
+    line-height: 19px;
+    color: $color-purple;
+    }
+}
+
+.cont{
+  width:100%;
+  overflow:hidden;
+}
+
+.news{
+
+  padding-top:31px;
+  padding-bottom:27px;
+  background: $color-mainpurple;
+  .news-filters{
+    .search_title{
+      font-family: $font-knockout;
+      font-size: 18px;
+      line-height: 21px;
+      margin-bottom:8px;
+      @include media-breakpoint-up(lg){
+      font-size: 20px;
+      line-height: 23px;
+      margin-bottom:0;
+      }
+      text-transform: capitalize;
+    }
+    input[type="text"] , select{
+      padding: 9px 13px 9px 13px;
+      @include media-breakpoint-up(lg){
+      padding: 10px 27px 13px 27px;
+      }
+      background: $white;
+      width: 100%;
+       font-size: 16px;
+      line-height: 22px;
+      @include media-breakpoint-up(lg){
+      font-size: 20px;
+      line-height: 27px;
+      }
+     
+      &::placeholder{
+      font-size: 16px;
+      line-height: 22px;
+      color:$color-mainpurple;
+      background: $white;
+      width: 100%;
+      @include media-breakpoint-up(lg){
+      font-size: 20px;
+      line-height: 27px;
+      }
+      
+      }
+    }
+    input[type="text"]{
+    margin-bottom:20px;
+     @include media-breakpoint-up(lg){
+     margin-bottom:0;
+    }
+    }
+    select{
+    margin-bottom:30px;
+    @include media-breakpoint-up(lg){
+     margin-left:16px;
+     margin-bottom:0;
+    }
+    }
+    button{
+    background: $white;
+    color:$color-mainpurple;
+    width: 100%;
+    padding: 14px 30px 14px 30px;
+    font-family: $font-knockout;
+    font-size: 16px;
+    line-height: 19px;
+     @include media-breakpoint-up(lg){
+      font-size: 20px;
+      line-height: 23px;
+      } 
+    text-align: center;
+    text-transform: uppercase;
+    }
+  }
+
+}
+
+
+
+    .news-list{
+        padding-top:64px;
+        padding-bottom:82px;
+        @include media-breakpoint-up(lg){
+        padding-top:50px;
+        padding-bottom:100px;
+        }
+        
+        background:$white;
+        .cats{
+            @include media-breakpoint-up(lg){
+            margin-top: 26px;
+            } 
+            .title{
+                margin-bottom: 14px;
+                color:$color-mainpurple;
+            }
+            .listing {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                width: fit-content;
+                padding-bottom: 48px;
+                @include media-breakpoint-up(lg){
+                flex-direction: column;
+                border-bottom: 2px solid #C4C4C4;
+                gap: 8px;
+                padding-bottom: 15px;
+                }
+                
+                li{
+                    background: #EEEEEE;
+                    border-radius: 20px;
+                    color: #626262;
+                    padding: 4px 17px 5px 14px;
+                    width: fit-content;
+                    &.active{
+                    background: $color-mainpurple;
+                    color: $white;
+                    }
+                    &:hover{
+                    cursor:pointer;
+                    background: $color-mainpurple;
+                    color: $white;
+                    }
+                }
+            }
+        }
+
+        #search_results{
+             .blog {
+                 margin-bottom: 30px;
+                 &:last-child{
+                 margin-bottom:0;
+                 } 
+               
+                .item{
+                @include media-breakpoint-up(lg){
+                margin-top: 26px;
+                }
+                }
+
+                .title{
+                margin-bottom: 2px;
+                font-family: Knockout;
+                font-size: 24px;
+                line-height: 28px;
+                @include media-breakpoint-up(lg){
+                font-size: 28px;
+                line-height: 33px;
+                }
+                color: $color-purple;
+                &:hover{
+                text-decoration:underline;
+                }
+                }
+                .img_block{
+                   img{
+                    height:220px;
+                    margin-bottom:24px;
+                    @include media-breakpoint-up(lg){
+                    height:275px;
+                    width:275px;
+                    margin-bottom:0px;
+                    float:right;
+                    }
+                    object-fit: cover;
+                    width:100%;
+                   }
+                }
+                .category{
+                      background: #EEEEEE;
+                      border-radius: 20px;
+                      color: #626262;
+                      width: fit-content;
+                      padding: 3px 13px;
+                      margin-bottom: 12px;
+                      @include media-breakpoint-up(lg){
+                        margin-bottom: 17px;
+                      }
+                      font-size:14px;
+                      line-height:19px;
+                      &:hover{
+                      cursor:pointer;
+                      background: $color-mainpurple;
+                      color: $white;
+                      }
+                }
+                    .campus{
+                    margin-bottom: 4px;
+                    @include media-breakpoint-up(lg){
+                    margin-bottom: 2px;
+                    }
+                    font-family: $font-knockout;
+                    font-size: 14px;
+                    line-height: 16px;
+                    text-transform: uppercase;
+                    color:#626262;
+                  }
+
+                  .teaser{
+                  @include media-breakpoint-up(lg){
+                     font-size:18px;
+                     line-height:25px;
+                    }
+                  color:$color-grey1;
+                  }
+            }   
+        }
+    }
+
+     .events_pagination{
+    margin-bottom:0;
+    padding-bottom: 123px;
+    @include media-breakpoint-up(lg){
+        padding-bottom:100px;
+    }
+    background: #fff;
+    }
+
+}

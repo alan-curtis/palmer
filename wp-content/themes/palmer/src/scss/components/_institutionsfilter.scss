@@ -1,0 +1,103 @@
+section.institutions-section{
+  form{
+  div#institutionsMap {
+    margin-bottom: 30px;
+   
+   div[role="dialog"] {
+    border-radius: 0 !important;
+    padding-top: 20px !important;
+    padding-left: 20px !important;
+}
+ button[title="Close"] {
+    display: none !important;
+} 
+ .googleMapinfowindow{ 
+   max-width: 360px;
+   p{
+   margin-bottom:10px;
+   &:last-child{
+   margin-bottom:0;
+   }
+   } 
+   .title{
+    font-family: $font-knockout;
+    font-size: 16px;
+    line-height: 19px;
+    color: $color-mainpurple;
+    text-transform: uppercase;
+   }
+   .street{
+    font-size: 16px;
+    line-height: 22px;
+   }
+   .campus{
+    color: $color-grey1;
+    font-size: 16px;
+    line-height: 22px;
+    b{
+      font-weight: 700;
+    }
+   }
+
+ }
+}
+
+    .filter {
+      margin-bottom: 20px;
+
+      label {
+        font-family: $font-knockout;
+        font-size: 20px;
+        line-height: 23px;
+        color: $color-mainpurple;
+        margin-bottom: 14px;
+      }
+
+      select {
+        border: 1px solid $color-mainpurple;
+        box-sizing: border-box;
+        padding: 13px 15px 11px 15px;
+        font-size: 18px;
+        line-height: 25px;
+        color: $color-mainpurple;
+
+        &#campus_select {
+          option[data-id="40"] {
+            display: none;
+          }
+        }
+      }
+    }
+	.buttons{
+	  gap:24px;
+	  margin-bottom:60px;
+		input{
+		font-size: 20px;
+		line-height: 23px;
+		text-align: center;
+		text-transform: uppercase;
+		font-family: $font-knockout;
+		padding:14px 30px;
+		}
+	    input[type="reset"]{
+		background: #F2EFF5;
+		color : $color-mainpurple;
+
+		}
+		input[type="submit"]{
+		background: $color-mainpurple;
+		color:$white;
+		}
+	}
+  }	
+  .no_institutions_found{
+  list-style:none;
+  }
+}
+
+.institutions_listing {
+  .campus {
+    list-style: none;
+    padding: 0;
+  }
+}

@@ -1,0 +1,74 @@
+/**
+ * $file
+ * Variables
+ *
+ ****
+ *
+ * Page Widths
+ * Fonts
+ * Colors
+ *
+ ****
+*/
+
+/**** Fonts ****/
+$font-awes: "FontAwesome";
+$font-knockout: "knockout";
+$font-mont: "Montserrat", sans-serif;
+$font-open: "Open Sans", sans-serif;
+
+/***** Colors ****/
+$color-purple: #4d3069;
+$color-lightpurple: #8c2b73;
+$color-darkpurple: #34194d;
+$color-mainpurple: #471f6f;
+
+$color-secondarygold: #ac8400;
+$color-lightgold: #d5a228;
+$color-teal: #00988c;
+$color-blue: #008caa;
+$color-green: #00819e;
+
+$color-grey1: #333333;
+$color-border-light: #c4c4c4;
+$color-black: #03182f;
+$color-dark-gray: #1e3650;
+$color-grey: #4b5a6a;
+$color-light-gray: #b4bcc4;
+$color-extra-light-gray: #e7eaee;
+$color-red: #891a0f;
+$color-light-red: #d0210f;
+$color-gold: #ffc107;
+
+$white: #ffffff;
+$black: #000000;
+
+// Paths
+//$svg-path: "../svgs";
+$image-path: "../images";
+$font-path: "../fonts";
+$img-path: "/wp-content/themes/palmer/dist/images";
+/**** Override Bootstrap Variables ****/
+// node_modules/bootstrap/scss/_variables.scss
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1240px,
+  xxl: 1440px
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1240px,
+  xxl: 1440px
+);
+
+// Grid columns
+// Set the number of columns and specify the width of the gutters.
+$grid-columns: 12;
+$grid-gutter-width: 40px;
+$grid-row-columns: 6;

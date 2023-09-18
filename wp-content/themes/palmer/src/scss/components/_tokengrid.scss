@@ -1,0 +1,111 @@
+.token-grid-section {
+  padding-top: 28px;
+  padding-bottom: 28px;
+  margin-top: 50px ;
+  @include media-breakpoint-up(md) {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+    margin-top: 0;
+  }
+  &.pt-0 {
+    margin-top: 0;
+  }
+
+  .token-grid-title {
+    font-family: $font-knockout;
+    margin-bottom: 36px;
+    font-size: 28px;
+    line-height: 33px;
+    @include media-breakpoint-down(sm) {
+      font-size: 24px;
+      line-height: 28px;
+    }
+  }
+
+  .caption {
+    font-size: 18px;
+    line-height: 30px;
+    @include media-breakpoint-down(sm) {
+      font-size: 16px;
+      line-height: 22px;
+    }
+    color: $color-grey1;
+    // width: 67%;
+  }
+
+  .token {
+    @include media-breakpoint-down(md) {
+      margin-bottom: 30px;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+   
+  a.token{
+    &:hover{
+    .icon-wrap{
+         .token-title{
+        color: $color-purple;
+        text-decoration: underline;
+        }
+        i,.number{
+        color: $color-lightgold;
+        background: $color-purple;
+        }
+      }
+      .caption{
+        color: $color-purple;
+        }
+    }
+  } 
+
+  p:nth-child(1) {
+    margin-bottom: 24px;
+  }
+
+  .icon-wrap {
+    .token-title {
+      margin-bottom: 5px;
+      font-family: Knockout;
+      font-size: 21px;
+      line-height: 30px;
+      color: $color-grey1;
+      @include media-breakpoint-down(md) {
+        display: none;
+      }
+    }
+
+    .number {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 20px;
+      background: $color-lightgold;
+      padding: 28px;
+      border-radius: 44px;
+      font-size: 28px;
+      line-height: 30px;
+    }
+
+    i {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 20px;
+      background: $color-lightgold;
+      padding: 28px;
+      color: $color-purple;
+      border-radius: 44px;
+      font-size: 24px;
+      line-height: 28px;
+    }
+
+    img {
+      height: 58px;
+      padding: 10px;
+    }
+  }
+
+  .buttons_wrap {
+    margin-bottom: 80px;
+  }
+}

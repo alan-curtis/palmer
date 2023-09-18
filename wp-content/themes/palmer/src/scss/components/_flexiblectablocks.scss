@@ -1,0 +1,307 @@
+.flexible-ctablocks {
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  @media (min-width: 1200px) {
+    .block {
+      opacity: 1;
+      position: relative;
+      bottom: -50px;
+    }
+  }
+
+  .block {
+    &:hover {
+      .morelink {
+        text-decoration: underline;
+      }
+
+      h3 {
+        color: $color-purple;
+      }
+    }
+  }
+
+  .animate_me_1 {
+    -webkit-transition: opacity 0.4s ease-in-out, bottom 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -ms-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    opacity: 1;
+    position: relative;
+    bottom: 0px;
+  }
+
+  .animate_me_2 {
+    -webkit-transition: opacity 0.5s ease-in-out, bottom 0.4s ease-in-out;
+    -moz-transition: opacity 0.4s ease-in-out;
+    -ms-transition: opacity 0.4s ease-in-out;
+    -o-transition: opacity 0.4s ease-in-out;
+    opacity: 1;
+    position: relative;
+    bottom: 0px;
+  }
+
+  .animate_me_3 {
+    -webkit-transition: opacity 0.6s ease-in-out, bottom 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -ms-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+    position: relative;
+    bottom: 0px;
+  }
+
+  .animate_me_4 {
+    -webkit-transition: opacity 0.7s ease-in-out, bottom 0.6s ease-in-out;
+    -moz-transition: opacity 0.6s ease-in-out;
+    -ms-transition: opacity 0.6s ease-in-out;
+    -o-transition: opacity 0.6s ease-in-out;
+    opacity: 1;
+    position: relative;
+    bottom: 0px;
+  }
+
+  @include media-breakpoint-down(md) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  h1 {
+    margin-bottom: 50px;
+    @include media-breakpoint-down(sm) {
+      font-size: 32px;
+      line-height: 37px;
+    }
+  }
+
+  .card {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    padding: 30px 20px;
+    border: 0;
+    height: 262px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+
+    @include media-breakpoint-up(md) {
+      height: 300px;
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-left: 0;
+    }
+    @include media-breakpoint-up(lg) {
+      height: 363px;
+    }
+
+    h3 {
+      margin-bottom: 10px;
+      font-size: 28px;
+      line-height: 33px;
+    }
+
+    p {
+      overflow: hidden;
+      margin-bottom: 10px;
+      flex-grow: 1;
+      @include media-breakpoint-up(lg) {
+        // max-height: 135px;
+        flex-grow: 1;
+      }
+      @include media-breakpoint-up(xl) {
+        flex-grow: 1;
+        // max-height: 180px;
+      }
+    }
+
+    .morelink {
+      bottom: 20px;
+      @include media-breakpoint-up(md) {
+        position: relative;
+        bottom: unset;
+      }
+    }
+  }
+
+  .b-purple {
+    border-bottom: 8px solid $color-lightpurple;
+  }
+
+  .text-purple {
+    color: $color-lightpurple;
+  }
+
+  .b-teal {
+    border-bottom: 8px solid $color-teal;
+  }
+
+  .text-teal {
+    color: $color-teal;
+  }
+
+  .b-secondarygold {
+    border-bottom: 8px solid $color-secondarygold;
+  }
+
+  .text-secondarygold {
+    color: $color-secondarygold;
+  }
+
+  .b-blue {
+    border-bottom: 8px solid $color-blue;
+  }
+
+  .text-blue {
+    color: $color-blue;
+  }
+  .wrapper-el {
+    .wrapper-item {
+      &:nth-child(4n + 1) {
+        .card {
+          .morelink:not([class*="no-color"]) {
+            color: $color-lightpurple;
+          }
+          border-bottom: 8px solid $color-lightpurple;
+        }
+      }
+    }
+    .wrapper-item {
+      &:nth-child(4n + 2) {
+        .card {
+          .morelink:not([class*="no-color"]) {
+            color: $color-teal;
+          }
+          border-bottom: 8px solid $color-teal;
+        }
+      }
+    }
+    .wrapper-item {
+      &:nth-child(4n + 3) {
+        .card {
+          .morelink:not([class*="no-color"]) {
+            color: $color-blue;
+          }
+          border-bottom: 8px solid $color-blue;
+        }
+      }
+    }
+    .wrapper-item {
+      &:nth-child(4n + 4) {
+        .card {
+         .morelink:not([class*="no-color"]) {
+            color: $color-secondarygold;
+          }
+          border-bottom: 8px solid $color-secondarygold;
+        }
+      }
+    }
+  }
+}
+
+.flexible-ctablocks {
+  .flexible-ctablocks-slider {
+    max-height: 407px;
+    overflow: hidden;
+    margin-bottom: 3px;
+    @include media-breakpoint-down(sm) {
+      /*overflow: visible;*/
+      padding: 0 20px;
+    }
+
+    .slick-list {
+      @include media-breakpoint-down(sm) {
+        margin-bottom: 20px;
+        padding: 0 55px 0 0;
+      }
+
+      .slick-track {
+        .slick-slide {
+          @include media-breakpoint-down(sm) {
+            margin: 0 20px 0 0 !important;
+            position: relative;
+            &:before {
+              content: "";
+              position: absolute;
+              left: 0;
+              top: 0;
+              width: 100%;
+              height: 102%;
+              z-index: 9;
+            }
+          }
+
+          .card {
+            max-height: 407px;
+            @include media-breakpoint-down(sm) {
+              position: relative;
+              display: flex !important;
+            }
+            @media (max-width: 575px) {
+              padding: 19px 19px 20px 20px;
+            }
+
+            img {
+              height: 407px;
+              object-fit: cover;
+            }
+
+            p {
+              @media (max-width: 575px) {
+                max-height: 180px;
+                overflow: hidden;
+              }
+            }
+          }
+
+          h3 {
+            @include media-breakpoint-down(sm) {
+              font-size: 24px;
+              line-height: 28px;
+            }
+          }
+        }
+
+        .slick-slide.slick-current {
+          @include media-breakpoint-down(sm) {
+            &:before {
+              content: none;
+              display: none;
+            }
+          }
+        }
+      }
+    }
+
+    .slick-dots {
+      bottom: -53px;
+
+      li {
+        margin: 0 4px;
+
+        button {
+          &:before {
+            color: #333333;
+            font-size: 13px;
+            opacity: 1;
+          }
+        }
+
+        &.slick-active {
+          button {
+            &:before {
+              color: transparent;
+              border: 2px solid #333;
+              opacity: 1;
+              font-size: 13px;
+              width: 11px;
+              height: 11px;
+              border-radius: 30px;
+              top: 3px;
+              left: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

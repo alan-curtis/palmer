@@ -1,0 +1,212 @@
+footer {
+  .tabs-columns {
+    display: none;
+  }
+  @media (max-width: 575px) {
+    .tabs-columns {
+      margin-bottom: 40px;
+      display: block;
+      display: flex;
+      justify-content: center;
+      #accordion {
+        width: 100%;
+      }
+      .smalltext.collapsed {
+        margin-bottom: 0 !important;
+        &:after {
+          content: "\f107";
+          font-family: "FontAwesome";
+          float: right;
+          background: #eeeeee;
+          border-radius: 22px;
+          width: 28px;
+          font-size: 22px;
+          color: $color-purple;
+        }
+      }
+      .smalltext {
+        margin-bottom: 0 !important;
+        font-family: $font-knockout;
+        font-weight: normal !important;
+        font-size: 24px !important;
+        line-height: 28px !important;
+        padding-bottom: 21px !important;
+        &:after {
+          content: "\f106";
+          font-family: "FontAwesome";
+          float: right;
+          background: #eeeeee;
+          font-weight: normal;
+          border-radius: 22px;
+          width: 28px;
+          font-size: 22px;
+          color: $color-purple;
+          position: absolute;
+          right: 23px;
+        }
+      }
+      .panel:last-child {
+        border-bottom: 2px solid RGB(196, 196, 196, 0.5);
+      }
+      .panel {
+        border-top: 2px solid RGB(196, 196, 196, 0.5);
+        margin-bottom: 0 !important;
+        padding-top: 21px;
+        &:hover {
+          cursor: pointer;
+        }
+        p {
+          margin-bottom: 30px;
+        }
+        a {
+          font-size: 18px;
+          line-height: 25px;
+        }
+      }
+    }
+    .default-columns {
+      display: none;
+    }
+    .logobox {
+      margin-top: 34px;
+      margin-bottom: 34px;
+      img {
+        width: 175px;
+      }
+    }
+  }
+  a {
+    color: $color-purple;
+  }
+  .socialicons {
+    margin-bottom: 40px;
+    ul {
+      gap: 20px;
+    }
+    a {
+      &:hover {
+        color: $color-purple;
+      }
+    }
+    @media (max-width: 575px) {
+      a {
+        .fab {
+          font-size: 30px;
+          line-height: 34px;
+        }
+      }
+    }
+  }
+  a.h4 {
+    color: $color-purple;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  @media (max-width: 575px) {
+    a.h4 {
+      background: $color-purple;
+      color: #fff;
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+  .footer-menu-columns {
+    a {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  .ctas {
+    gap: 21px;
+
+    li {
+      border-right: 2px solid #c4c4c4;
+      padding-right: 21px;
+    }
+    @media (max-width: 575px) {
+      li {
+        border: none;
+        background: $color-purple;
+        margin: 14px 0px;
+        padding: 15px 0px;
+        &:last-child {
+          margin-bottom: 40px;
+        }
+      }
+    }
+
+    li:last-child {
+      border: none;
+      padding-right: 0;
+    }
+  }
+
+  .footer-menu-columns {
+    .smalltext {
+      font-weight: 700;
+      color: $color-grey1;
+    }
+  }
+
+  .copyright {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    background: #ebebeb;
+    a {
+      text-decoration: underline;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  @media (max-width: 575px) {
+    .copyright {
+      line-height: 32px;
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+  }
+
+  @media (min-width: 575px) {
+    .socialicons {
+      a {
+        font-size: 20px;
+        line-height: 23px;
+      }
+    }
+
+    .row {
+      &:first-child {
+        margin-top: 20px;
+        margin-bottom: 45px;
+      }
+    }
+    .default-columns {
+      margin-bottom: 64px;
+      row-gap: 26px;
+      justify-content: space-evenly;
+      .smalltext {
+        margin-bottom: 17px;
+      }
+
+      .menu-column {
+        .items {
+          p {
+            margin-bottom: 22px;
+            &:last-child {
+              margin-bottom: 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer-border {
+  background: linear-gradient(90deg, #34194d 0%, #8c2b73 100%);
+  height: 30px;
+}

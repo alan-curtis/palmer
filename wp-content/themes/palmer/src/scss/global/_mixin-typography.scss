@@ -1,0 +1,330 @@
+@mixin headline-1 {
+  font-family: $font-knockout;
+  font-style: normal;
+  font-size: 48px;
+  line-height: 56px;
+}
+
+@mixin headline-2 {
+  font-family: $font-knockout;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 30px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 36px;
+    line-height: 42px;
+  }
+}
+
+@mixin headline-3 {
+  font-family: $font-knockout;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 32px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+
+@mixin headline-4 {
+  font-family: $font-knockout;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 23px;
+  text-transform: uppercase;
+
+  @include media-breakpoint-up(md) {
+    font-size: 20px;
+    line-height: 23px;
+  }
+}
+
+@mixin headline-5 {
+  font-family: $font-mont;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+
+  @include media-breakpoint-up(md) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+@mixin headline-6 {
+  font-family: $font-mont;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  @include media-breakpoint-up(md) {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+
+@mixin displaytext {
+  font-family: $font-mont;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 49px;
+  @include media-breakpoint-up(md) {
+    font-size: 50px;
+    line-height: 61px;
+  }
+}
+
+
+@mixin displaytextxxl {
+  font-family: $font-mont;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 55px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  @include media-breakpoint-up(md) {
+    font-size: 55px;
+    line-height: 67px;
+  }
+}
+
+
+@mixin article-title {
+  font-family: $font-mont;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.727273px;
+  text-transform: uppercase;
+}
+
+@mixin open-sans-26{
+  font-family : $font-open;
+  font-size:26px;
+  line-height:43px;
+}
+
+@mixin lead {
+  font-family: $font-open;
+  font-size: 18px;
+  line-height: 25px;
+  @include media-breakpoint-down(md){
+    font-size: 14px;
+    line-height: 21px;
+  }
+  @include media-breakpoint-down(sm){
+    font-size: 10px;
+    line-height: 13px;
+  }
+}
+
+@mixin body {
+  font-family: $font-open;
+  font-size: 16px;
+  line-height: 22px;
+  background: #f6f6f6;
+  color: $color-grey1;
+}
+
+@mixin smalltext {
+  font-family: $font-open;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+@mixin buttontext {
+  font-family: $font-mont;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 23px;
+  text-transform: uppercase;
+}
+
+@mixin morelink {
+  font-family: $font-knockout;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+
+@mixin label {
+  font-family: $font-mont;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+
+/*
+ * Button CSS
+ */
+
+
+@mixin buttonprimary {
+  @include buttontext;
+  border: 2px solid $color-light-red;
+  padding: 13px 25px;
+  text-transform: uppercase;
+  color: $color-black;
+  transition: .5s;
+
+  &:hover {
+    background: $color-red;
+    color: $white;
+  }
+}
+
+
+@mixin buttonfilled {
+  @include buttonprimary;
+  background: $color-red;
+  color: $white;
+}
+
+
+/*
+ * global-link
+ */
+
+
+@mixin global-link {
+  position: relative;
+  padding: 0 0 0 40px;
+
+  &:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 50%;
+    background: $color-red;
+    width: 30px;
+    height: 2px;
+    transform: translate(0, -50%);
+  }
+}
+
+
+/*
+ * active tab
+ */
+@mixin active-effect {
+  position: relative;
+  &:before {
+    content: "";
+    background: $color-red;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 10px;
+  }
+}
+
+// colors
+@mixin colorpurple{
+  color:$color-purple !important;
+}
+@mixin colorblue{
+  color:$color-blue;
+}
+@mixin colorlightpurple{
+  color:$color-lightpurple;
+}
+@mixin colordarkpurple{
+  color:$color-darkpurple;
+}
+@mixin colorgrey{
+  color:$color-grey1;
+}
+@mixin colorwhite{
+  color:$white;
+}
+@mixin colorsecondarygold{
+  color:$color-secondarygold;
+}
+@mixin colorlightgold{
+  color:$color-lightgold;
+}
+//bg color
+@mixin bgpurple{
+  background: $color-purple;
+}
+@mixin bgcolordarkpurple{
+  background: $color-darkpurple;
+}
+@mixin bggreen{
+  background: $color-green;
+}
+
+@mixin purplebutton{
+  display: inline-block;
+  font-size: 20px;
+  font-family: $font-knockout;
+  color: $white;
+  line-height: normal;
+  padding: 14px 30px;
+  background: #34194D;
+  border: 2px solid transparent;
+  &:hover{
+    color: $black;
+    border: 2px solid #34194D;
+    background: transparent;
+  }
+}
+
+@mixin trim($numLines: null){
+  @if $numLines != null {
+    display:-webkit-box;
+    -webkit-line-clamp:$numLines;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+  }
+  @else{
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    overflow:hidden;
+    display:block;
+  }
+}
+
+@mixin link-arrow{
+  font-size: 18px;
+  line-height: 21px;
+  font-family: $font-knockout;
+  color: $color-purple;
+  text-transform: uppercase;
+  @include media-breakpoint-up(md) {
+    font-size: 20px;
+    line-height: 23px;
+  }
+  &:after{
+    content: "\f105";
+    font-family: $font-awes;
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 900;
+    margin-left: 8px;
+  }
+  &:hover{
+  text-decoration:underline;
+  color: $color-purple;
+  }
+}

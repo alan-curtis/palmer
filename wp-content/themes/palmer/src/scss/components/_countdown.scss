@@ -1,0 +1,75 @@
+.countdown-section{
+	background: $color-purple;
+	padding-top: 30px;
+    padding-bottom: 30px;
+    @include media-breakpoint-down(sm){
+    padding-top: 20px;
+    padding-bottom: 20px;
+    }
+	#timer{
+	display: flex;
+	@include media-breakpoint-down(sm){
+	gap:20px;
+	}
+    justify-content: center;
+	color: #fff;
+    font-family: $font-knockout;
+    text-align: center;
+    .unit{
+    border-right: 3px solid;
+    border-image: linear-gradient(to top, #8E2E75, RGB(99,54,129)) 1 100% !important;
+    @include media-breakpoint-down(sm){
+    padding-left: 0px;
+    padding-right: 20px;
+    }
+    padding-left: 50px;
+    padding-right: 50px;
+    p:first-child{
+    font-size: 108px;
+    line-height: 127px;
+    @include media-breakpoint-down(sm){
+    font-size: 80px;
+    line-height: 94px;
+    }
+    }
+    p:last-child{
+    margin-top: -33px;
+    font-size: 30px;
+    line-height: 50px;
+    color: $color-lightgold;
+    @include media-breakpoint-down(sm){
+    font-size: 24px;
+    line-height: 50px;
+    }
+    }
+    &:last-child{
+    border:none;
+    padding-right:0px;
+    }
+    }
+	}
+ 
+    #onexpired{
+    .h1{
+    color: $color-lightgold;
+    @include media-breakpoint-down(sm){
+    font-size: 32px;
+    line-height: 37px;
+    }
+    }
+    .msg{
+    font-size: 25px;
+    line-height: 39px;
+    color:$white;
+    @include media-breakpoint-up(md){
+    width: 80%;
+    margin: 0 auto;
+    }
+    @include media-breakpoint-down(sm){
+    font-size: 16px;
+    line-height: 22px;
+    }
+    }
+    }
+
+}

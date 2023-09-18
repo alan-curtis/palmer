@@ -1,0 +1,95 @@
+.sidebar-hours {
+  max-width: 230px;
+
+  @include media-breakpoint-down(lg) {
+    max-width: unset;
+    padding-top: 40px;
+  }
+
+  .title {
+    font-family: $font-open;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    color: $color-purple;
+    margin:0 0 15px;
+    text-transform:capitalize;
+  }
+  
+  ul{
+    border-bottom: 2px solid #C4C4C4;
+    li{
+    gap:10px;
+    margin:0 0 15px;
+      i{
+      color:$color-purple;
+      }
+    }
+  }
+
+@include media-breakpoint-down(md){
+  .hrs_wrap {
+      background: linear-gradient( 180deg, #633681 36.97%, #8E2E75 100%);
+      padding: 20px;
+      color: $white;
+     
+      .clock_hand{
+      position: absolute;
+      bottom: 0;
+      left: 90px;
+      }
+      .clock_circum{
+      position: absolute;
+      bottom: 0px;
+      z-index: 1;
+      left: 20px;
+      }
+
+      .title{
+      font-family: $font-knockout;
+      font-size: 28px;
+      line-height: 33px;
+      color:$white;
+      font-weight:normal;
+      }
+      ul{
+      border-bottom:none;
+        li{
+          gap: 10px;
+          margin: 0 0 30px;
+          &:last-child{
+          margin:0;
+          }
+            .hours {
+            z-index: 9999;
+            display: flex;
+            flex-direction: column;
+            gap:5px;
+            b{
+            font-family: Knockout;
+            font-size: 16px;
+            line-height: 19px;
+            text-transform: uppercase;
+            font-weight:normal;
+            }
+            span{
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 27px;
+            }
+           }
+          i{
+           display:none;
+          }
+        }
+      }
+  }
+}  
+
+}
+
+.mobile-version-hours{
+background: #F6F6F6; ;  
+}

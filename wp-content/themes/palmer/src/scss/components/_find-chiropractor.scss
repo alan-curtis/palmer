@@ -1,0 +1,165 @@
+/* Find a Chiropractor Map Styles */
+.wpgmza-gallery-container.wpgmza-basic-listing-image-holder {
+  display: none;
+}
+.wpgmza-content-address-holder {
+  p.wpgmza-content-address-holder-inner {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+}
+.wpgmza_basic_row {
+  .wpgmza-address {
+    margin-bottom: 1rem;
+  }
+  .wpgmza-desc {
+    p {
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+.wpgmza-desc {
+  p {
+    font-size: 1.2rem !important;
+    clear: both;
+    font-size: 1.4rem;
+    line-height: 1.6;
+  }
+}
+#wpgmza_map_5 .wpgmza_marker_list_class , #wpgmza_map_6 .wpgmza_marker_list_class , #wpgmza_map_4 .wpgmza_marker_list_class {
+  font-family: $font-open;
+  .wpgmaps_blist_row {
+    display: flex;
+  }
+  .wpgmza-basic-list-item {
+    &.wpgmza_div_title,
+    &.wpgmza_div_address {
+      font-size: 1.4rem;
+      padding-left: 0;
+    }
+  }
+}
+#wpgmza_map_5 .wpgmza-infowindow , #wpgmza_map_6 .wpgmza-infowindow , #wpgmza_map_4 .wpgmza-infowindow , #wpgmza_map_4 #wpgmza_marker_holder_4 {
+  width: 320px;
+  font-family: $font-open;
+  .wpgmza_infowindow_title {
+    color: $color-purple !important;
+    margin-bottom: .6rem;
+    font-weight: bold !important;
+    font-size: 18px !important;
+    padding-top: 1rem;
+  }
+  .wpgmza_infowindow_address {
+    display: none;
+  }
+  .wpgmza_infowindow_description {
+    a {
+      color: $color-purple;
+      text-decoration: underline;
+    }
+  }
+  .chiro-listing-main {
+    display: flex;
+    padding-bottom: .8rem;
+    font-size: 14px;
+    color: #333 !important;
+    .practice-name {
+      font-style: italic;
+    }
+    .address, .city-state {
+      font-size: 1.3rem;
+    }
+    >div {
+      &:first-of-type {
+        padding-right: 1rem;
+        width: 58%;
+      }
+    }
+    .contact {
+      .email-address,
+      .phone-number {
+        text-transform: lowercase !important;
+        font-size: 1.3rem;
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        &:before {
+          font-family: $font-awes;
+          font-weight: 900;
+          font-size: 1.4rem;
+          color: $color-purple;
+          display: inline-block;
+          margin-right: 5px;
+          content: "\f0e0";
+        }
+        a {
+          white-space: nowrap;
+        }
+      }
+      .phone-number:before {
+        content: "\f095";
+        font-size: 1.8rem;
+      }
+    }
+  }
+  .fa {
+    margin-right: 5px;
+  }
+  .chiro-listing-more-info {
+    .website {
+      padding-bottom: 1rem;
+    }
+    .techniques {
+      padding-top: 10px;
+      ul {
+        column-count: 2;
+        margin-top: 0;
+        padding-left: 20px;
+        li {
+          padding: 0 10px 0 0;
+          font-family: 'Open Sans';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 19px;
+          text-transform: capitalize;
+          color: #333333;
+        }
+      }
+      .list-heading {
+        color: #4d3069;
+        font-weight: bold;
+        margin-bottom: .6rem;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700 !important;
+        font-size: 14px;
+        line-height: 19px;
+        text-transform: capitalize;
+        color: #333333 !important;
+      }
+    }
+  }
+}
+.gm-style .wpgmza-modern-store-locator {
+  padding-top: 5px;
+}
+.wpgmza-modern-store-locator {
+  >.wpgmza-inner {
+    background: $color-mainpurple !important;
+  }
+}
+.wpgmza-address.addressInput.pac-target-input {
+  min-width: 250px;
+  color: #fff !important;
+  font-size: 14px;
+}
+.wpgmza-radius.wpgmza-form-field__input.wpgmza_sl_radius_select {
+  color: #fff;
+}
+.wpgmza-inner {
+  input[type="button"] {
+    color: #fff;
+  }
+}

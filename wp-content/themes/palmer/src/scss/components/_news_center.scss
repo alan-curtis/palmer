@@ -1,0 +1,183 @@
+.news-center-template{
+padding-top: 37px;
+.headline{
+    padding-top: 30px;
+    padding-bottom: 30px;
+     @include media-breakpoint-up(md){
+    padding-top: 37px;
+    padding-bottom: 22px;
+    }
+ p{
+ margin:0;
+ }
+.h1{
+     @include media-breakpoint-down(md){
+    font-size: 32px;
+    line-height: 37px;
+    }
+    }
+.breadcrumb {
+    background: $white;
+    justify-content: center;
+    padding: 0;
+    font-family: $font-open;
+    font-size: 14px;
+    line-height: 19px;
+    color:$color-mainpurple;
+}
+}
+
+  ul#breadcrumbs {
+    display: flex;
+    justify-content: center;
+    gap:5px;
+    li{
+    font-size: 14px;
+    line-height: 19px;
+    color: $color-purple;
+    }
+}
+
+.cont{
+  width:100%;
+  overflow:hidden;
+}
+
+.news{
+
+  padding-top:31px;
+  padding-bottom:27px;
+  background: $color-mainpurple;
+  .news-filters{
+    .search_title{
+      font-family: $font-knockout;
+      font-size: 20px;
+      line-height: 23px;
+      text-transform: capitalize;
+    }
+    input[type="text"] , select{
+      padding: 10px 27px 13px 27px;
+      background: $white;
+      width: 100%;
+      font-size: 20px;
+      line-height: 27px;
+      &::placeholder{
+      color:$color-mainpurple;
+      background: $white;
+      width: 100%;
+      font-size: 20px;
+      line-height: 27px;
+      }
+    }
+    select{
+    margin-left:16px;
+    }
+    button{
+    background: $white;
+    color:$color-mainpurple;
+    width: 100%;
+    padding: 14px 30px 14px 30px;
+    font-family: $font-knockout;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    text-transform: uppercase;
+    }
+  }
+
+}
+
+
+
+    .news-list{
+        padding-top:50px;
+        padding-bottom:100px;
+        background:$white;
+        .cats{
+            margin-top: 26px;
+            .title{
+                margin-bottom: 14px;
+                color:$color-mainpurple;
+            }
+            .listing {
+                display: flex;
+                flex-direction: column;
+                width: fit-content;
+                gap: 8px;
+                padding-bottom: 15px;
+                border-bottom: 2px solid #C4C4C4;
+                li{
+                    background: #EEEEEE;
+                    border-radius: 20px;
+                    color: #626262;
+                    padding: 4px 17px 5px 14px;
+                    width: fit-content;
+                    &.active{
+                    background: $color-mainpurple;
+                    color: $white;
+                    }
+                    &:hover{
+                    cursor:pointer;
+                    background: $color-mainpurple;
+                    color: $white;
+                    }
+                }
+            }
+        }
+
+        #search_results{
+             .blog {
+                
+                .item{
+                margin-top: 26px;
+                }
+
+                margin-bottom: 51px;
+                .title{
+                margin-bottom: 2px;
+                font-family: Knockout;
+                font-size: 28px;
+                line-height: 33px;
+                color: $color-purple;
+                }
+                .img_block{
+                   img{
+                    height:275px;
+                    object-fit: cover;
+                    width:100%;
+                   }
+                }
+                .category{
+                      background: #EEEEEE;
+                      border-radius: 20px;
+                      color: #626262;
+                      width: fit-content;
+                      padding: 3px 13px;
+                      margin-bottom: 17px;
+                      font-size:14px;
+                      line-height:19px;
+                }
+                    .campus{
+                    margin-bottom: 2px;
+                    font-family: $font-knockout;
+                    font-size: 14px;
+                    line-height: 16px;
+                    text-transform: uppercase;
+                    color:#626262;
+                  }
+
+                  .teaser{
+                  font-size:18px;
+                  line-height:25px;
+                  color:$color-grey1;
+                  }
+            }   
+        }
+    }
+
+     .events_pagination{
+    padding-bottom: 100px;
+    background: #fff;
+    }
+
+}

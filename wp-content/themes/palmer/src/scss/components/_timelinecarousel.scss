@@ -1,0 +1,304 @@
+.timeline-carousel-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  .nav-buttons {
+    gap: 6px;
+    margin-left: 20px;
+    @include media-breakpoint-down(sm) {
+      margin-left: 0;
+    }
+
+    .timeline-index-prev, .timeline-index-next {
+      @include media-breakpoint-down(sm) {
+        flex: 0 0 50%;
+        text-align: center;
+      }
+
+      span {
+        overflow:hidden;
+        padding: 14px 30px 14px 30px;
+        text-transform: uppercase;
+        font-family: Knockout;
+        font-size: 20px;
+        line-height: 23px;
+        display: block;
+        background: $color-darkpurple;
+
+        &:hover {
+          cursor: pointer;
+        }
+         transition: 0.2s transform ease-in-out;
+    will-change: transform;
+    z-index: 0;
+    
+    &:after{
+    background: linear-gradient(268.88deg, #471F6F 4.5%, #633681 94.03%);;
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-100%, 0) rotate(0deg);
+    transform-origin: top left;
+    transition: 0.5s transform ease-out;
+    will-change: transform;
+    z-index: -1;
+    }
+
+    &:hover{
+    box-shadow: 0px 0px 10px RGB(0 0 0 / 48%);
+    will-change: transform;
+  &:after{
+    transform: translate(0, 0);
+    }
+    }
+      }
+    }
+  }
+
+  .col-md-8.mx-auto {
+    margin-bottom: 50px;
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 40px;
+    }
+
+    .timeline-carousel-nav {
+      margin-bottom: 15px;
+      @include media-breakpoint-down(sm) {
+        margin-bottom: 0;
+      }
+
+      .slick-track {
+        margin-left: 0 !important;
+        display: flex;
+        justify-content: space-between;
+        width: 100% !important;
+        position: relative;
+
+        @include media-breakpoint-down(sm){
+        transform: none;
+        overflow: scroll hidden;
+        }
+
+        &:after {
+          content: "";
+          background: #D5A228;
+          height: 8px;
+          width: 100%;
+          position: absolute;
+          left: 0;
+          bottom: 15px;
+          border-radius: 10px;
+          z-index: -1;
+        }
+
+        &:before {
+          display: none;
+          content: none;
+        }
+
+        .slick-slide {
+          flex: 0;
+          @include media-breakpoint-down(sm){
+          flex: 0 0 20%; 
+        }
+
+          &.slick-active {
+            position: relative;
+
+            &:after {
+              content: "";
+              background: none;
+              border: 2px solid #fff;
+              position: absolute;
+              width: 8px;
+              height: 8px;
+              border-radius: 10px;
+              left: 50%;
+              bottom: 15px;
+            }
+
+            &:last-child {
+              &:after {
+                left: unset;
+                right: 0;
+              }
+            }
+          }
+
+          &.slick-current {
+            &:after {
+              content: none !important;
+            }
+          }
+
+          .slide-main {
+            height: 65px;
+          }
+        }
+      }
+
+      .slick-list.draggable {
+        z-index: 998;
+      }
+
+      .slick-current .year {
+        color: $color-purple;
+      }
+
+      .slick-current .pointer-drop {
+        display: block !important;
+        margin: 0 auto;
+      }
+
+      .year {
+        font-family: Knockout;
+        font-size: 16px;
+        @include media-breakpoint-up(md){
+        font-size: 20px;
+        }
+        line-height: 30px;
+        text-align: left;
+        color: $color-lightgold;
+      }
+
+    }
+  }
+
+  .timeline-carousel-content {
+    padding-left: 20px;
+    padding-top: 20px;
+    @include media-breakpoint-down(sm) {
+      padding-left: 0;
+    }
+
+    .slick-list {
+      margin-bottom: 20px;
+
+      h3 {
+        margin-bottom: 10px;
+        font-family: $font-knockout;
+        font-weight: normal;
+        @include media-breakpoint-down(sm) {
+          font-size: 24px;
+          line-height: 29px;
+        }
+      }
+      
+      .blurb{
+      a{
+      text-decoration: underline;
+      &:hover{
+      text-decoration: none;
+      }
+      }
+      p {
+        font-size: 20px;
+        line-height: 30px;
+        font-family: $font-open;
+        @include media-breakpoint-down(sm) {
+          font-size: 16px;
+        }
+      }
+      }
+
+      .slick-arrow {
+        background: $color-darkpurple;
+        text-transform: uppercase;
+        font-size: 20px;
+        line-height: 24px;
+        color: $white;
+        max-width: 140px;
+        width: 100%;
+        padding: 15px;
+        height: auto;
+        font-family: $font-knockout;
+
+        @include media-breakpoint-down(sm) {
+          font-size: 16px;
+          line-height: 20px;
+          max-width: 160px;
+          width: 100%;
+        }
+      }
+    }
+
+    .slick-prev {
+      bottom: 0;
+      top: unset;
+      left: 20px;
+      display: none !important;
+    }
+
+    .slick-next {
+      bottom: 0;
+      top: unset;
+      left: 170px;
+      display: none !important;
+    }
+
+  }
+
+  .years_bar {
+    width: 100%;
+    position: absolute;
+    top: 40px;
+  }
+
+  h1 {
+    margin-bottom: 26px;
+    @include media-breakpoint-down(sm){
+    font-size: 32px;
+    line-height: 37px;
+    }
+  }
+  
+
+  .timeline-carousel {
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 0 !important;
+    }
+
+    .slick-slide {
+      img {
+        width: 576px;
+        height: 374px;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+    color: black;
+  }
+
+  .slick-next:before {
+    content: 'NEXT';
+  }
+
+  .slick-prev:before {
+    content: 'PREV';
+  }
+
+  .slick-slide {
+    margin: 0;
+    transition: all ease-in-out .3s;
+    opacity: 1;
+  }
+
+  .slick-active {
+    opacity: 1;
+  }
+
+  .slick-current {
+    opacity: 1;
+  }
+
+  .slick-dots {
+    display: none;
+  }
+}

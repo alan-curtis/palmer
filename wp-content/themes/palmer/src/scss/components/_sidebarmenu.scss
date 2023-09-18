@@ -1,0 +1,287 @@
+.sidebar-menu-block {
+
+  @include media-breakpoint-up(lg) {
+    max-width: 230px;
+    margin-bottom: 34px;
+  }
+
+  .sidebar-dynamic-menu {
+    .menu {
+      .menu-item {
+        &.level-0 {
+          margin-bottom: 5px;
+
+          .menu-item-parent {
+            &:hover {
+              background: #471f6f;
+
+              a {
+                color: #fff;
+                text-decoration: underline;
+              }
+
+              .fas {
+                color: #fff;
+              }
+            }
+          }
+        }
+
+        &.current-menu-ancestor {
+          .menu-item-parent {
+            &.active {
+              background: #471F6F;
+              color: #fff;
+              box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+
+              .nav-link {
+                color: #FFFFFF;
+              }
+
+              .fa-angle-down {
+                color: #ffffff;
+              }
+            }
+
+            .nav-link {
+              color: #471F6F;
+            }
+
+            .fa-angle-down {
+              color: #471F6F;
+            }
+          }
+        }
+
+        .menu-item-parent {
+          background: #EEEEEE;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          transition: .25s;
+
+          &.active {
+            background: #471F6F;
+            color: #fff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+
+            .nav-link {
+              color: #ffffff;
+            }
+
+            .fa-angle-down {
+              color: #fff;
+            }
+          }
+
+
+          .nav-link {
+            padding: 9px 10px;
+            color: #471F6F;
+            width: 100%;
+            font-weight: bold;
+          }
+
+          .fa-angle-down {
+            transition: .3s;
+            transform: rotate(0deg);
+            margin: 0 10px 0 0;
+            cursor: pointer;
+            color: #471F6F;
+          }
+
+          .fa-angle-up {
+            margin: 0 10px 0 0;
+          }
+        }
+
+        .collapse {
+          ul {
+            padding: 18px 0 13px;
+
+            li.level-1 {
+              .menu-item-parent {
+                background: none;
+                margin-bottom: 20px;
+                box-shadow: none;
+
+                &.active {
+                  background: none;
+                  box-shadow: none;
+                  margin-bottom: 20px !important;
+
+                  .fa-angle-up {
+                    color: #471f6f;
+                  }
+                }
+
+                &:hover {
+                  a {
+                    color: #471f6f !important;
+                    text-decoration: underline;
+                    transition: .3s;
+                  }
+
+                  .fas {
+                    color: #471f6f;
+                  }
+                }
+              }
+
+              .link-item {
+                color: rgba(0, 0, 0, .5);
+                font-weight: normal;
+                padding: 0 10px;
+                position: relative;
+                border-left: 4px solid #fff;
+
+                .fa-angle-down, .fa-angle-up {
+                  color: #471f6f;
+                }
+              }
+
+              &.active {
+                .link-item {
+                  color: #471F6F;
+                  font-weight: bold;
+                  border-left: 4px solid #D5A228;
+                  padding-top: 0;
+                  padding-bottom: 0;
+                }
+
+                .fa-angle-down, .fa-angle-up {
+                  color: #471f6f;
+                }
+              }
+
+              &:last-child {
+                margin-bottom: 0;
+
+                .menu-item-parent {
+                  margin-bottom: 0;
+                }
+                .level-2{
+                  &:last-child{
+                    margin-bottom: 0;
+                  }
+                }
+              }
+
+              .level-2 {
+                .menu-item-parent {
+                  a {
+                    color: rgba(0, 0, 0, 0.5);
+                    font-weight: normal;
+                    padding: 0 10px;
+                    position: relative;
+                    border-left: 4px solid #fff;
+
+                    &.active {
+                      color: #471F6F;
+                      font-weight: bold;
+                      border-left: 4px solid #D5A228;
+                      padding-top: 0;
+                      padding-bottom: 0;
+                    }
+                  }
+
+                  &:hover {
+                    a {
+                      color: #471F6F;
+                    }
+
+                    .fas {
+                      color: #471F6F
+                    }
+                  }
+                  .fas {
+                    display: none;
+                  }
+                }
+              }
+            }
+
+            .level-2 {
+              margin: 0 0 20px;
+
+              &.active {
+                .link-item {
+                  color: #471F6F;
+                  font-weight: bold;
+                  border-left: 4px solid #D5A228;
+                  padding-top: 0;
+                  padding-bottom: 0;
+                }
+
+                .fa-angle-down, .fa-angle-up {
+                  color: #471f6f;
+                }
+              }
+            }
+          }
+
+          .collapse {
+            ul {
+              padding: 0;
+              border-left: 5px solid #eee;
+              margin-left: 14px;
+
+              li {
+                .menu-item-parent {
+                  margin-bottom: 20px;
+
+                  &.active {
+                    background: none;
+                    box-shadow: none;
+                  }
+                }
+
+                .link-item {
+                  color: rgba(0, 0, 0, .5);
+                  font-weight: normal;
+                  padding: 0 10px;
+                  position: relative;
+                  border-left: 4px solid #fff;
+
+                  .fa-angle-down, .fa-angle-up {
+                    color: #471f6f !important;
+                  }
+                }
+
+                &:last-child {
+                  .menu-item-parent {
+                    margin-bottom: 0;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    #menu-top-menu-1 {
+      .menu-item {
+        &.level-0 {
+          display: none;
+
+          &.current-menu-parent {
+            display: block;
+          }
+        }
+      }
+    }
+
+  }
+}
+
+body.custom-menu-block {
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+
+    .custom-menu-block {
+      order: -1;
+    }
+  }
+}

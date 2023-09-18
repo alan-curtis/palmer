@@ -1,0 +1,179 @@
+.gm-svpc {
+    display: none;
+}
+button.gm-control-active.gm-fullscreen-control {
+    display: none;
+}
+.wpgmza_map{
+.gmnoprint[role="menubar"] {
+    display: none;
+}
+.gmnoprint.gm-bundled-control.gm-bundled-control-on-bottom {
+    top: -50px;
+    right: 92% !important;
+    @include media-breakpoint-up(md){
+    top: -50px;
+    right: 97% !important;
+    }
+}
+.gm-style .gm-style-iw-c{
+    border-radius:0;
+    max-width:360px !important;
+}
+ button[title="Close"] {
+    outline: none !important;
+}    
+}
+
+#wpgmza_map_4 {
+    .gmnoprint.gm-bundled-control.gm-bundled-control-on-bottom {
+        bottom: 169px !important;
+        right: 50px !important;
+        top: unset;
+    }
+    option.wpgmza-radius.wpgmza_sl_select_option {
+        color: $color-mainpurple;
+    }
+    .wpgmza-search.wpgmza_sl_search_button_div {
+        display: block !important;
+    }
+
+    div#wpgmza_marker_holder_4{
+
+        .wpgmza_table .wpgmaps_mlist_row {
+            display: block;
+            width: 100% !important;
+            overflow: hidden;
+            padding-top: 20px;
+            border-width: 0px 0 1px 0 !important;
+            padding-bottom: 15px;
+        }
+
+        .table-wrap {
+            overflow: hidden;
+            padding: 10px 40px;
+            td.wpgmza_table_custom_field_1 {
+                display: none;
+            }
+        }
+
+        td.wpgmza_table_title {
+            font-family: 'Knockout' !important;
+            font-weight: 400 !important;
+            font-size: 22px !important;
+            line-height: 26px !important;
+            text-transform: capitalize !important;
+            color: #4D3069 !important;
+            display: block !important;
+            overflow: hidden;
+            padding: 0 !important;
+            padding-bottom: 0 !important;
+        }
+        td.wpgmza_table_description {
+            padding: 0 !important;
+        }
+        .address {
+            font-family: 'Open Sans';
+            font-style: italic;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 19px;
+            text-transform: capitalize;
+        }
+        .contact {
+            .phone-number,.email-address{
+                a {
+                    border: none !important;
+                    font-weight : 400;
+                }
+            }
+        }
+        .website{
+            padding: 0 !important;
+            a {
+                border: none !important;
+                font-size: 16px !important;
+                text-transform: none !important;
+                font-weight: 400;
+                padding: 0 !important;
+            }
+        }
+        .techniques{
+            padding-top: 10px;
+            .list-heading {
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 700 !important;
+                font-size: 14px;
+                line-height: 19px;
+                text-transform: capitalize;
+                color: #333333 !important;
+            }
+            ul li{
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 19px;
+                text-transform: capitalize;
+                color: #333333;
+            }
+        }
+        div#wpgmza_table_4_filter {
+            display: none;
+        }
+        div#wpgmza_table_4_length {
+            display: none;
+        }
+        table#wpgmza_table_4 thead {
+            display: none !important;
+        }
+
+
+    }
+
+
+}
+
+.wpgmza-infowindow{
+    p.wpgmza_infowindow_address {
+    font-family: $font-knockout;
+    font-size: 16px;
+    line-height: 19px;
+    color: $color-mainpurple;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    padding: 0 10px 0 10px;
+    margin-bottom:10px;
+}
+p.wpgmza_infowindow_title , .wpgmza_infowindow_description {
+    margin: 0;
+    font-family: $font-open;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 0 10px 0 10px;
+    margin-bottom:10px;
+    font-weight: normal !important;
+}
+p:nth-last-child(2){
+    margin-bottom:0;
+}
+
+}
+
+.pac-container{
+    margin-top: -108px;
+}
+
+.wpgmza-basic-list-item.wpgmza_div_title {
+    font-family: $font-knockout;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    text-transform: capitalize;
+    color: $color-purple;
+}
+
+.wpgmza-google-html-overlay {
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,44 @@
+.related-links-block {
+  padding-bottom:40px;
+  max-width: 230px;
+  @include media-breakpoint-down(sm) {
+    max-width: unset;
+  }
+
+  h5 {
+    font-family: $font-open;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    color: $color-purple;
+    margin-bottom: 15px;
+  }
+
+  ul {
+    padding: 0;
+    border-bottom: 2px solid #C4C4C4;
+    li {
+      list-style-type: none;
+      margin-bottom: 10px;
+      a {
+        font-family: $font-open;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+        color: $color-purple;
+        position: relative;
+        text-decoration: none;
+       i{
+       &:before{
+       content: "\f054";
+       font-size: 13px;
+       margin-left: 9px;
+       }
+       }
+       &:hover{
+       text-decoration: underline;
+       }
+      }
+    }
+  }
+}
